@@ -54,6 +54,6 @@
     <input bind:value={password} type="password" placeholder="password" />
   </div>
   <p style="color:red">{err}</p>
-  <button class="button button-outline" on:click={onLogin}>Registor</button>
+  <button class="button button-outline" on:click={onLogin}>Register</button>
   <button class="button button-clear" on:click={onCancle}>Back</button>
 </section>

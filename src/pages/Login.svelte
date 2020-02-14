@@ -7,7 +7,7 @@
     error = "";
     if (!(username && password)) {
       error = "plz check username and password";
-      return
+      return;
     }
     let res = await fetch("http://localhost:1234/api/user/login", {
       method: "POST",
@@ -52,11 +52,22 @@
   <title>Login to forum</title>
 </svelte:head>
 <section class="container">
+  <img style="width:300px;height:300px" src="REAL_TRASH.png" alt="Logo" />
   <div>
-    <input bind:value={username} type="text" placeholder="username" />
+    <label>
+      Username
+      <br>
+      <input bind:value={username} type="text" />
+    </label>
+
   </div>
   <div>
-    <input bind:value={password} type="password" placeholder="password" />
+    <label>
+      Password
+      <br>
+      <input id="psw" bind:value={password} type="password" />
+    </label>
+
   </div>
   <p>
     Don't have account ?
