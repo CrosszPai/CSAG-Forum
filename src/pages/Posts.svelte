@@ -48,7 +48,7 @@
       {#each posts as post}
         <PostListItem
           id={post.id}
-          name={post.name}
+          name={post.username}
           topic={post.topic}
           on:gotoPost={gotoPost} />
       {/each}
