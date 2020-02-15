@@ -5,7 +5,7 @@
   import { user, pages } from "../store.js";
   const handlePostClick = () => {
     if (active && topic && content) {
-      fetch("http://brainless-api.herokuapp.com/api/posts/", {
+      fetch("https://brainless-api.herokuapp.com/api/posts/", {
         method: "POST",
         body: JSON.stringify({
           name: $user.username,

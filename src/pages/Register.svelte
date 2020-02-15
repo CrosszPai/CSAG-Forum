@@ -10,7 +10,7 @@
       err = "plz check username and password";
       return;
     }
-    let res = await fetch("http://brainless-api.herokuapp.com/api/user", {
+    let res = await fetch("https://brainless-api.herokuapp.com/api/user", {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: {
