@@ -7,7 +7,7 @@
   const handleReplyClick = async () => {
     if (active && reply) {
       let res = await fetch(
-        `http://localhost:1234/api/posts/${$pages.replace(
+        `http://brainless-api.herokuapp.com/api/posts/${$pages.replace(
           "PostID?id=",
           ""
         )}/reply`,
